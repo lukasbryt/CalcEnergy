@@ -1,0 +1,79 @@
+
+<!--Criado por Lucas Brito Santos-->
+<html lang="en-US">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="face.css" media="screen">
+    <script src="sweetalert2.all.min.js"></script>
+    <title>EletricCalc</title>
+
+<head>
+        
+        
+</head>
+
+<body>
+
+    <div id="title">
+        <span>CalcEletric</span> <span id="page">1-4</span>
+        <div id="alert" style="display: none;">
+            <h2 style="color: white;">Preencha o campo!</h2>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div class="boxes" id='box1'>
+            <h4>Qual é o consumo em Watts?</h4>
+            <input class="inputs" id="potencia" type="number">
+            <div style="text-align: center;">
+                <button class="okBtn" id="btn1">OK</button>
+            </div>
+        </div>
+
+        <div class="boxes" id="box2">
+            <h4>Qual é o tempo de uso em minutos?</h4>
+            <input class="inputs" id="tempo" type="number">
+            <div style="text-align: center;">
+                <button class="okBtn" id="btn2">OK</button>
+            </div>
+        </div>
+
+        <div class="boxes" id="box3">
+            <h4>Quantos dias de uso?</h4>
+            <input class="inputs" id="dias" type="number">
+            <div style="text-align: center;">
+                <button class="okBtn" id="btn3">OK</button>
+            </div>
+        </div>
+
+        <div class="boxes" id="box4">
+            <form>
+                <label for="estados">Escolha a região</label><br>
+                <select name="estado" id="estado">
+                    <option value="0"> </option>
+                    <option value="1">Bahia</option>
+                    <option value="2">São Paulo</option>
+                    <option value="3">Paraná</option>
+                    <option value="4">Pará</option>
+                </select>
+            </form>
+            <div style="text-align: center;">
+                <button class="okBtn" id="calc">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxes" id="popup">
+        <span>Em minutos</span><br>
+        <input class="result" readonly="" id="resultado"><br>
+        <span>Em dias</span><br>
+        <input class="result" readonly="" id="resultado1"><br>
+        <span>Valor médio</span><br>
+        <input class="result" readonly="" id="resultado2"><br>
+        <div style="text-align: center; padding-bottom: 35px;"><button class="okBtn" id="again">VOLTAR</button></div>  
+    </div>
+
+    <script src="script.js"></script>
+    
+</html>
